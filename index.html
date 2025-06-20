@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoImportUSA - Перегон авто из Америки под ключ</title>
+    <link rel="stylesheet" href="usa.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">Авто из США</div>
+                <nav class="nav">
+                    <a class="nav__link" href="#services">Услуги</a>
+                    <a class="nav__link" href="#process">Как это работает</a>
+                    <a class="nav__link" href="#calculator">Калькулятор</a>
+                    <a class="nav__link" href="#reviews">Отзывы</a>
+                    <a class="nav__link" href="#contacts">Контакты</a>
+                </nav>
+                <div class="header__phone">+375(44)768-84-86</div>
+            </div>
+        </div>
+    </header>
+
+    <section class="intro">
+        <div class="container">
+            <h1 class="intro__title">Профессиональный перегон автомобилей из США</h1>
+            <p class="intro__subtitle">Полный комплекс услуг по доставке авто из Америки под ключ</p>
+            <button class="btn btn--primary" id="consultBtn">Получить бесплатную консультацию</button>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Наши услуги</h2>
+            <div class="services__grid">
+                <div class="service-card">
+                    <div class="service-card__icon">🚗</div>
+                    <h3 class="service-card__title">Поиск и проверка авто</h3>
+                    <p class="service-card__desc">Профессиональный подбор автомобиля по вашим параметрам с полной проверкой истории</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">✈️</div>
+                    <h3 class="service-card__title">Доставка морем</h3>
+                    <p class="service-card__desc">Организация безопасной доставки автомобиля морским транспортом</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">📑</div>
+                    <h3 class="service-card__title">Таможенное оформление</h3>
+                    <p class="service-card__desc">Полное сопровождение таможенного оформления с минимальными затратами</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card__icon">🔧</div>
+                    <h3 class="service-card__title">Подготовка к эксплуатации</h3>
+                    <p class="service-card__desc">Приведение автомобиля в соответствие с местными требованиями</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process" id="process">
+        <div class="container">
+            <h2 class="section-title">Как мы работаем</h2>
+            <div class="process__steps">
+                <div class="process-step">
+                    <div class="process-step__number">1</div>
+                    <h3 class="process-step__title">Заявка</h3>
+                    <p class="process-step__desc">Оставляете заявку или звоните нам</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-step__number">2</div>
+                    <h3 class="process-step__title">Подбор авто</h3>
+                    <p class="process-step__desc">Мы находим для вас лучшие варианты</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-step__number">3</div>
+                    <h3 class="process-step__title">Покупка</h3>
+                    <p class="process-step__desc">Оформляем покупку и готовим к отправке</p>
+                </div>
+                <div class="process-step">
+
+
+<div class="process-step__number">4</div>
+                    <h3 class="process-step__title">Доставка</h3>
+                    <p class="process-step__desc">Доставляем авто в ваш город</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-step__number">5</div>
+                    <h3 class="process-step__title">Получение</h3>
+                    <p class="process-step__desc">Вы получаете готовый к эксплуатации автомобиль</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="calculator" id="calculator">
+        <div class="container">
+            <h2 class="section-title">Калькулятор стоимости</h2>
+            <div class="calculator__form">
+                <div class="form-group">
+                    <label for="car-type">Тип автомобиля</label>
+                    <select id="car-type" class="form-control">
+                        <option value="sedan">Легковой (седан, хэтчбек)</option>
+                        <option value="suv">Внедорожник/кроссовер</option>
+                        <option value="truck">Пикап/грузовой</option>
+                        <option value="sports">Спортивный автомобиль</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="car-price">Стоимость авто ($)</label>
+                    <input type="number" id="car-price" class="form-control" placeholder="Например, 15000">
+                </div>
+                <div class="form-group">
+                    <label for="delivery-type">Способ доставки</label>
+                    <select id="delivery-type" class="form-control">
+                        <option value="sea">Морская доставка (4-6 недель)</option>
+                        <option value="air">Авиадоставка (1-2 недели)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="destination">Страна назначения</label>
+                    <select id="destination" class="form-control">
+                        <option value="ru">Россия</option>
+                        <option value="kz">Казахстан</option>
+                        <option value="by">Беларусь</option>
+                        <option value="ua">Украина</option>
+                    </select>
+                </div>
+                <button class="btn btn--primary" id="calculateBtn">Рассчитать стоимость</button>
+                <div class="calculator__result" id="calculatorResult"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <h2 class="section-title">Отзывы клиентов</h2>
+            <div class="reviews__slider">
+                <div class="review">
+                    <div class="review__author">Иван Петров</div>
+                    <div class="review__car">Ford Mustang 2018</div>
+                    <div class="review__text">Очень доволен сервисом. Автомобиль пришел в идеальном состоянии, все документы готовы. Сэкономил около 30% по сравнению с местными ценами.</div>
+                    <div class="review__rating">★★★★★</div>
+                </div>
+                <div class="review">
+                    <div class="review__author">Алексей Смирнов</div>
+                    <div class="review__car">Toyota Camry 2020</div>
+                    <div class="review__text">Второй раз пользуюсь услугами этой компании. Все прозрачно, сроки соблюдены, никаких скрытых платежей. Рекомендую!</div>
+                    <div class="review__rating">★★★★☆</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contacts__grid">
+                <div class="contact-info">
+                    <h3 class="contact-info__title">Наши офисы</h3>
+                    <p><strong>Светлогорск:</strong> ул.Школьная 4</p>
+
+
+<p><strong>Минск:</strong> Машиностроителей 22</p>
+                    <p><strong>Телефон:</strong> +375(44)768-84-86</p>
+                    <p><strong>Email:</strong> info@autoimportusa.com</p>
+                </div>
+                <div class="contact-form">
+                    <h3 class="contact-form__title">Остались вопросы?</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" placeholder="Телефон">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="4" placeholder="Ваш вопрос"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__logo">Авто из США</div>
+                <div class="footer__copyright">© 2025 Все права защищены</div>
+                <div class="footer__social">
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">IG</a>
+                    <a href="#" class="social-icon">YT</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="usa.js"></script>
+</body>
+</html>
